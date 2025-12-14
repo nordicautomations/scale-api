@@ -117,3 +117,8 @@ def scale():
         "pixel_length": px_len,
         "px_per_meter": px_per_meter
     })
+import os
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8080))
+    app.run(host="0.0.0.0", port=port)
